@@ -14,6 +14,15 @@ int _printf(const char *format, ...);
 
 /*PLACEHOLDER FOR FUTURE FUNCTIONS*/
 
-/*PROBABLY GONNA NEED A STRUCT IN HERE SOMEWHERE*/
+/**
+ * find_type - checks for format type
+ * @def: format definer
+ * @func: desired function
+ */
+typedef struct find_type
+{
+	char *def;
+	int (*func)(va_list);
+} find_type_t;
 
 #endif /* HOLBERTON_H */
