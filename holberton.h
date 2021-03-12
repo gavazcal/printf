@@ -9,6 +9,9 @@
 /*PROTOTYPES*/
 int _putchar(char c);
 
+/*PRINTF FUNCTION*/
+int _printf(const char *format, ...);
+
 /*PLACEHOLDER FOR FUTURE FUNCTIONS*/
 
 /*PROBABLY GONNA NEED A STRUCT IN HERE SOMEWHERE*/
