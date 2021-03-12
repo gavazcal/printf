@@ -1,6 +1,3 @@
-#printf
-
-You have a captain's log due before 2021-03-14 (in 2 days)! Log it now!
 0x11. C - printf
 
     Foundations - Low-level programming & Algorithm ― Hatching out
