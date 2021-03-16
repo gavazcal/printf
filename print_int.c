@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_int prints out integers
+ * print_int - prints out integers
  * @args: arguments
  * Return: integer
  */
@@ -32,6 +32,7 @@ int print_int(va_list args)
 int print_int2(int n)
 {
 	int num;
+
 	num = n;
 
 	if (num < 0)
