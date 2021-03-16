@@ -50,32 +50,32 @@ int print_int(va_list args)
 		numsize++;
 	}
 	return (numsize);
-
+}
 	/* Alternative reverse/forward printing */
 
 	/* Can use a count function to find digits then create array based on digit size */
 
-	intlimit = malloc(sizeof(int) * 20); /* 20 is int limit */
-	/* or */
-	intlimit = malloc(sizeof(int) * numsize); /* Memory efficienct */
+//	intlimit = malloc(sizeof(int) * 20); /* 20 is int limit */
+//	/* or */
+//	intlimit = malloc(sizeof(int) * numsize); /* Memory efficienct */
 
-	int idx;
-	int intcopy;
+//	int idx;
+//	int intcopy;
 
-	for (idx = 0; num =! 0; idx++)
-	{
-		intcopy = num % 10;
-		intsize[idx] = intcopy;
-		num /= 10;
-	}
-	while (idx > -1)
-	{
-		_putchar(intsize[idx] = '0';
-	idx--;
-	}
-	free(intsize);
-	return (num);
-}
+//	for (idx = 0; num =! 0; idx++)
+//	{
+//		intcopy = num % 10;
+//		intsize[idx] = intcopy;
+//		num /= 10;
+//	}
+//	while (idx > -1)
+//	{
+//		_putchar(intsize[idx] = '0';
+//	idx--;
+//	}
+//	free(intsize);
+//	return (num);
+//}
 
 /* 2nd function */
 
