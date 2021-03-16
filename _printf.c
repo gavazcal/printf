@@ -21,13 +21,17 @@ int _printf(const char *format, ...)
 		if (format[idx] == '%')
 		{
 			if (format[idx + 1] == '\0')
+			{
 				return (-1);
+			}
 			else
 			{
 				pointer = format[idx + 1];
 				f = find_type(&pointer);
 				if (f == NULL)
+				{
 					return (strlen);
+				}
 				else
 				{
 					strlen += f(args);
