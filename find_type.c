@@ -23,10 +23,18 @@
  * Fill - space
  * */
 
-struct type_finder {
-	{"c", print_single_char},
-	{"s", print_string},
-	{"d", print_int},
-	{"i", print_int},
-	{"%", print_modulus},
-};
+/* format coming from printf prototype? */
+
+int find_type(char format, va_list ) /* Not sure how to specify to va_list) */
+{
+	unsigned int idx = 0
+
+	struct type_finder[] = {
+	{'c', print_single_char},
+	{'s', print_string},
+	{'d', print_int},
+	{'i', print_int},
+	{'%', print_modulus},
+	};
+
+/* Missing conditionals to call the functions */
