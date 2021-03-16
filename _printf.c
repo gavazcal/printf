@@ -9,8 +9,7 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int (*f)(va_list);
-	int idx = 0;
-	int strlen = 0;
+	int idx = 0, strlen = 0;
 	char pointer;
 
 	if (format == NULL)
@@ -23,12 +22,6 @@ int _printf(const char *format, ...)
 		{
 			if (format[idx + 1] == '\0')
 				return (-1);
-			else if (format[idx + 1] == '%')
-			{
-				_putchar('%');
-				idx++;
-				strlen += 1;
-			}
 			else
 			{
 				pointer = format[idx + 1];
