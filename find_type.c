@@ -2,7 +2,7 @@
 
 /**
  * find_type - finds specifier and returns function
- * *format - char to check
+ * @format: char to check
  * Return: function or null
  */
 

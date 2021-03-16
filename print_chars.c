@@ -30,7 +30,7 @@ int print_string(va_list args)
 }
 /**
  * print_modulus - prints a % when asked
- * @args: arguments (unused)
+ * @list: list
  * Return: 1
  */
 int print_modulus(va_list __attribute__((unused)) list)
