@@ -9,21 +9,22 @@
 /*PROTOTYPES*/
 int _putchar(char c);
 int _print_int2(int n);
-
-/*PRINTF FUNCTION*/
+int (*find_type(const char *format))(va_list);
 int _printf(const char *format, ...);
-
-/*PLACEHOLDER FOR FUTURE FUNCTIONS*/
-
+int print_single_char(va_list args);
+int print_string(va_list args);
+int print_int(va_list args);
+int print_modulus(va_list __attribute__((unused)) list);
+/*STRUCT*/
 /**
- * find_type - checks for format type
+ * find_sp - checks for format type
  * @def: format definer
- * @func: desired function
+ * @f: desired function
  */
-typedef struct find_type
+typedef struct find_sp
 {
 	char *def;
-	int (*func)(va_list);
-} find_type_t;
+	int (*f)(va_list);
+} find_sp_t;
 
 #endif /* HOLBERTON_H */
