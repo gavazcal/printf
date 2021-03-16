@@ -9,7 +9,8 @@ int _printf(const char *format, ...)
 {
 	va_list args;
 	int (*f)(va_list);
-	int idx = 0; strlen = 0;
+	int idx = 0;
+	int strlen = 0;
 	char pointer;
 
 	if (format == NULL)

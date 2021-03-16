@@ -11,7 +11,7 @@ int (*find_type(const char *format))(va_list)
 {
 	unsigned int idx = 0;
 
-		find_sp type_finder[] = {
+		find_sp_t type_finder[] = {
 			{"c", print_single_char},
 			{"s", print_string},
 			{"d", print_int},
@@ -20,9 +20,9 @@ int (*find_type(const char *format))(va_list)
 			{NULL, NULL}
 		};
 
-	while (type_finder[idx])
+	while (type_finder[idx].specifier)
 	{
-		if (type_finder[idx].specifier == (*format))
+		if (type_finder[idx].specifier[0] == (*format))
 			return (type_finder[idx].f);
 		idx++;
 	}

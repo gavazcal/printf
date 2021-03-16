@@ -38,13 +38,13 @@ int print_int(va_list args)
 {
 	int num = va_arg(args, int);
 	int numsize = 0;
-	int *intsize; /* For alt method */
+/*	int *intsize;  For alt method */
 
 	print_int2(num);
 
 	if (num < 0)
 		numsize = 1;
-	while (num =! 0)
+	while (num != 0)
 	{
 		num /= 10;
 		numsize++;
@@ -55,33 +55,40 @@ int print_int(va_list args)
 
 	/* Can use a count function to find digits then create array based on digit size */
 
-//	intlimit = malloc(sizeof(int) * 20); /* 20 is int limit */
-//	/* or */
-//	intlimit = malloc(sizeof(int) * numsize); /* Memory efficienct */
+/**
+ * intlimit = malloc(sizeof(int) * 20); * 20 is int limit
+ * 	* or
+ *	intlimit = malloc(sizeof(int) * numsize); Memory efficienct
 
-//	int idx;
-//	int intcopy;
+ *	int idx;
+ *	int intcopy;
 
-//	for (idx = 0; num =! 0; idx++)
-//	{
-//		intcopy = num % 10;
-//		intsize[idx] = intcopy;
-//		num /= 10;
-//	}
-//	while (idx > -1)
-//	{
-//		_putchar(intsize[idx] = '0';
-//	idx--;
-//	}
-//	free(intsize);
-//	return (num);
-//}
-
-/* 2nd function */
+ *	for (idx = 0; num =! 0; idx++)
+ *	{
+ *		intcopy = num % 10;
+ *		intsize[idx] = intcopy;
+ *		num /= 10;
+ *	}
+ *	while (idx > -1)
+ *	{
+ *		_putchar(intsize[idx] = '0';
+ *	idx--;
+ *	}
+ *	free(intsize);
+ *	return (num);
+ *}
+ */
+ /* 2nd function */
+/**
+ * print_int2 - the other thing
+ * @n: number
+ * Return: an int
+ */
 
 int print_int2(int n)
 {
-	unsigned int num;
+	int num;
+	num = n;
 
 	if (num < 0)
 	{
@@ -95,6 +102,8 @@ int print_int2(int n)
 		print_int2(num / 10);
 	}
 	_putchar(num % 10 + '0');
+
+	return (num);
 }
 
 /**
@@ -104,5 +113,5 @@ int print_int2(int n)
  */
 int print_modulus(va_list __attribute__((unused)) list)
 {
-	return(_putchar('%');
+	return (_putchar('%'));
 }
