@@ -1,45 +1,24 @@
 #include "holberton.h"
 
-/*Specifiers*/
+/**
+ * find_type - finds specifier and returns function
+ * *format - char to check
+ * Return: function or null
+ */
 
 
-//%% - percent sign (/%)
-//%c - char /* unsigned char */
-//%d, %i - signed int /* long, int, short, unsigned short */
-//%e, %E - double, float /* scientific notation */
-//%f - float
-//%g, %G - double, float /* uses shorter of %e or %f; %E or %f */
-//%o - signed int, short, unsigned short, unsigned int, long /* octal */
-//%s - char * /* string */
-//%u - unsigned int, unsigned long
-//%x, %X - unsigned int /* hexadecimal */
-//%p - void * /* pointer address  & is address-of mod */
-//%n - /* nothing void? */
-
-
-
-/* Width - %5d space fill %05d 0 fill)
- * Precision - floats, %.6 (default)
- * Signage - %
- * Justifaction - right-justified default; - left align, + right align
- * Fill - space
- * */
-
-/* format coming from printf prototype? */
-
-int (*find_type(const char *format))(va_list) /* Not sure how to specify to va_list) */
+int (*find_type(const char *format))(va_list)
 {
-	unsigned int idx = 0
+	unsigned int idx = 0;
 
-		struct type_finder[] = {
+		specifier_t type_finder[] = {
 			{"c", print_single_char},
 			{"s", print_string},
 			{"d", print_int},
 			{"i", print_int},
 			{"%", print_modulus},
+			{NULL, NULL}
 		};
-
-	/* Missing conditionals to call the functions */
 
 	while (type_finder[idx])
 	{
