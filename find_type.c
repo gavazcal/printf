@@ -4,16 +4,16 @@
 
 
 %% - percent sign (/%)
-%c - char
-%d, %i - signed int
-%e, %E - long int /* scientific notation */
+%c - char /* unsigned char */
+%d, %i - signed int /* long, int, short, unsigned short */
+%e, %E - double, float /* scientific notation */
 %f - float
-%g, %G - short /* uses shorter of %e or %f; %E or %f */
-%o - signed int /* octal */
+%g, %G - double, float /* uses shorter of %e or %f; %E or %f */
+%o - signed int, short, unsigned short, unsigned int, long /* octal */
 %s - char * /* string */
-%u - unsigned int
+%u - unsigned int, unsigned long
 %x, %X - unsigned int /* hexadecimal */
-%p - * /* pointer address  & is address-of mod */
+%p - void * /* pointer address  & is address-of mod */
 %n - /* nothing void? */
 
 /* Width - %5d space fill %05d 0 fill)
