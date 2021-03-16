@@ -47,6 +47,5 @@ _printf("My name is %s and I am %d years old\\n", name, age);
 .I printf(3)
 .I _putchar.c
 .SH AUTHORS
-Gabriel Vazquez, Yared Toro
-
+Gabriel Vazquez Calderon, Yared Torres Rodriguez
 
