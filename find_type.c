@@ -11,7 +11,7 @@ int (*find_type(const char *format))(va_list)
 {
 	unsigned int idx = 0;
 
-		specifier_t type_finder[] = {
+		find_sp type_finder[] = {
 			{"c", print_single_char},
 			{"s", print_string},
 			{"d", print_int},
