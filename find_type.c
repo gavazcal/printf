@@ -25,7 +25,7 @@
 
 /* format coming from printf prototype? */
 
-int find_type(char format, va_list ) /* Not sure how to specify to va_list) */
+int find_type(char format, va_list) /* Not sure how to specify to va_list) */
 {
 	unsigned int idx = 0
 

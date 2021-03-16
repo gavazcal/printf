@@ -8,6 +8,7 @@
 #include <unistd.h>
 /*PROTOTYPES*/
 int _putchar(char c);
+int _print_int2(int n);
 
 /*PRINTF FUNCTION*/
 int _printf(const char *format, ...);
