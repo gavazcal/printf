@@ -8,8 +8,8 @@
 #include <unistd.h>
 /*STRUCT*/
 /**
- * find_sp - checks for format type
- * @def: format definer
+ * struct find_sp - checks for format type
+ * @specifier: format definer
  * @f: desired function
  */
 typedef struct find_sp

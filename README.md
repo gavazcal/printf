@@ -150,3 +150,13 @@ alex@ubuntu:~/c/printf$
     We strongly encourage you to work all together on a set of tests
     If the task does not specify what to do with an edge case, do the same as printf
 
+Description
+Our _printf function writes output to stdout, the standard output. It is variadic and can, therefore, take any number of arguments.
+Successful execution returns the number of characters printed (minus the null byte).
+Unsuccessful execution produces a negative value return.
+
+Example
+To print out the name and age of a person where age is of type int and name and is a pointer to a string:
+#include "holberton.h"
+_printf("My name is %s and I am %d years old\\n", name, age);
+
